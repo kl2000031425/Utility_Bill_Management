@@ -1,8 +1,9 @@
 /* Define your CSS styles here */
 .container {
-  max-width: 600px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 20px;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
 
 .navbar {
@@ -19,7 +20,8 @@
   margin: 0;
 }
 .image {
-  background-image: url(./image.png);
+  display: flex;
+  background-image: url(././image.png);
 }
 .navbar li {
   display: inline-block;
@@ -32,6 +34,7 @@
 }
 
 .bill-container {
+  max-width: 1920px;
   margin-top: 40px;
 }
 
@@ -61,4 +64,72 @@ a:hover::after, a:focus::after {
   opacity: 1;
   -webkit-transform: translateX(0px);
   transform: translateX(0px);
+}
+
+/* Button CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }

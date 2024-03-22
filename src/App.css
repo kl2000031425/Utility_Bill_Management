@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+/* Define your CSS styles here */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.image {
+  background-image: url(./image.png);
+}
+.navbar li {
+  display: inline-block;
+  margin-right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar li a {
+  text-decoration: none;
+  color: #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bill-container {
+  margin-top: 40px;
+}
+
+a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transform: translateX(-5px);
+  transform: translateX(-5px);
+  -webkit-transition: all 0.35s cubic-bezier(1,0,0,1);
+  transition: all 0.35s cubic-bezier(1,0,0,1);
+}
+
+a:hover::after, a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
 }

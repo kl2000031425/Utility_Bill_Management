@@ -14,7 +14,7 @@ import Home from './components/home';
 function App() {
   return (
     <Router>
-      <div className="container">
+      <div className="gradient_background">
         <nav className="navbar">
           <ul>
           <li><Link to="/">Home</Link></li>
@@ -24,7 +24,7 @@ function App() {
           </ul>
         </nav>
         
-        <div className="bill-container">
+        <div className="container">
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/water-bill" element={<WaterBill />} />

@@ -7,7 +7,7 @@ const ElectricityBill=()=> {
       alert("Payment processed!");
     }
     return (
-      <div>
+      <div className="container">
         <h2>Electricity Bill</h2>
         <p>Your bill amount is ₹{billAmount}</p>
         <button className='button-85' onClick={pay}>Pay Now</button>

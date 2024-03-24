@@ -6,9 +6,9 @@ const Home = () => {
     return (
         <div className="container">
             <h2>Pay Utility Bills</h2>
-            <img className="image2" src={water_bill} alt="water"/>;
-            <img className="image1"  src={image} alt="img"/>;
-                <img className="image3"  src={electricity} alt="electric"/>;
+            <img className="image2" src={water_bill} alt="water"/>
+            <img className="image1"  src={image} alt="img"/>
+                <img className="image3"  src={electricity} alt="electric"/>
         </div>
       );
 }

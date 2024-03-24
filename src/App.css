@@ -34,13 +34,13 @@
   border-radius: 8px;
   width: 30%;
   margin-right: 28px;
-  margin-left: 35px;
+  margin-left: 35px
 }
 .image3 {
   animation: slideIn 2s;
   position: right;
   border-radius: 8px;
-  width: 30%;
+  width: 30%
 }
 
 .image1 {
